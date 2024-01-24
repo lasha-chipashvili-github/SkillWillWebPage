@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
-import { PRODUCTS } from "../../products";
+import { ShopContext } from "../context/shop-context";
+import { PRODUCTS } from "../PRODUCT";
 import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 
@@ -13,8 +13,8 @@ export const Cart = () => {
 
   return (
     <div className="cart">
-      <div>
-        <h1>თქვენი კალათა</h1>
+      <div className="cart-heading">
+        <h1>SHOPPING BAG</h1>
       </div>
       <div className="cart">
         {PRODUCTS.map((product) => {

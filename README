@@ -1,3 +1,7 @@
 სატესტოდ ადმინის ემაილია: superuser@email.com ხოლო მისი პაროლი Tenochtitlan
 სატესტო მომხმარებლის ემაილია: testuser@email.com ხოლო მისი პაროლი Paroli123
 
+ფრონტ ენდის დეველოპერი როცა გასტარტავს დოკერის კონტეინერებს გამოიყენოს შემდეგი ქომანდები:
+to start: docker-compose -f .\docker-compose-for-front-end.yml up
+to stop: docker-compose -f .\docker-compose-for-front-end.yml down
+to remove containers: docker-compose -f .\docker-compose-for-front-end.yml down -v --remove-orphans
