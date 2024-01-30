@@ -1,0 +1,10 @@
+services:
+  - name: backend
+    env: python
+    buildCommand: docker build -t skillwill_backend_docker -f ./backend/Dockerfile .
+    startCommand: gunicorn -b 0.0.0.0:8000 django_project.wsgi:application
+
+  - name: frontend
+    env: node
+    buildCommand: docker build -t skillwill_frontend_docker -f ./frontend/Dockerfile .
+    startCommand: npm start
